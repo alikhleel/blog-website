@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block content %}
+	<ul>
+		<li><a href="{% url 'blog:index' %}">Home</a></li>
+		<li><a href="{% url 'blog:users' %}">Users</a></li>
+		<li><a href="{% url 'blog:blogs' %}">Blogs</a></li>
+		<li><a href="{% url 'blog:categories' %}">Categories</a></li>
+	</ul>
+{% endblock %}
